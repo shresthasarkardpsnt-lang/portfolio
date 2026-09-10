@@ -283,6 +283,18 @@
      PROJECTS
      ============================================================ */
   .project-list{ display:flex; flex-direction:column; gap:24px; }
+
+  .project-preview{
+    width:100%;
+    aspect-ratio: 16 / 7.5;
+    border:2px solid var(--color-border);
+    background:var(--color-surface);
+    margin-bottom:18px;
+    overflow:hidden;
+  }
+  .project-preview img{
+    width:100%; height:100%; object-fit:cover;
+  }
   .project-card{
     border:var(--border-w) solid var(--color-border);
     background:var(--color-surface-2);
@@ -511,6 +523,7 @@
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#certificates">Certificates</a>
+      <a href="#achievements">Achievements</a>
       <a href="#education">Education</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -612,6 +625,7 @@
           <div class="project-date">SEP<br>2025</div>
           <div>
             <div class="project-title">Local Bus Tracking App</div>
+            <div class="project-preview"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNDIwIj4KPHJlY3Qgd2lkdGg9IjkwMCIgaGVpZ2h0PSI0MjAiIGZpbGw9IiNGN0Y1RUYiLz4KPHJlY3QgeD0iMjIiIHk9IjIyIiB3aWR0aD0iODU2IiBoZWlnaHQ9IjM3NiIgZmlsbD0iI0UzRThERCIgc3Ryb2tlPSIjMTYxNDBGIiBzdHJva2Utd2lkdGg9IjYiLz4KPHJlY3QgeD0iNDYiIHk9IjQ2IiB3aWR0aD0iODA4IiBoZWlnaHQ9IjQ0IiBmaWxsPSIjMTYxNDBGIi8+CjxjaXJjbGUgY3g9IjcwIiBjeT0iNjgiIHI9IjkiIGZpbGw9IiNGRjVBMUYiLz48cmVjdCB4PSI5NCIgeT0iNjAiIHdpZHRoPSIxNTUiIGhlaWdodD0iMTYiIGZpbGw9IiNGN0Y1RUYiLz4KPHJlY3QgeD0iNDYiIHk9IjExMiIgd2lkdGg9IjUwMCIgaGVpZ2h0PSIyNTAiIGZpbGw9IiNEN0U0RDciIHN0cm9rZT0iIzE2MTQwRiIgc3Ryb2tlLXdpZHRoPSI0Ii8+CjxwYXRoIGQ9Ik03NCAzMTUgQzE1MCAyNzAgMTcwIDE3NSAyNTAgMjIwIFMzNjAgMzAwIDQzMCAyMDUgUzUwMCAxNzAgNTIwIDE0NSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMEU3QzdCIiBzdHJva2Utd2lkdGg9IjEwIi8+CjxjaXJjbGUgY3g9IjI1MCIgY3k9IjIyMCIgcj0iMTUiIGZpbGw9IiNGRjVBMUYiIHN0cm9rZT0iIzE2MTQwRiIgc3Ryb2tlLXdpZHRoPSI0Ii8+CjxjaXJjbGUgY3g9IjQzMCIgY3k9IjIwNSIgcj0iMTUiIGZpbGw9IiNGRkM1M0QiIHN0cm9rZT0iIzE2MTQwRiIgc3Ryb2tlLXdpZHRoPSI0Ii8+CjxyZWN0IHg9IjU3NSIgeT0iMTEyIiB3aWR0aD0iMjU0IiBoZWlnaHQ9Ijg2IiBmaWxsPSIjRjdGNUVGIiBzdHJva2U9IiMxNjE0MEYiIHN0cm9rZS13aWR0aD0iNCIvPgo8cmVjdCB4PSI1NzUiIHk9IjIxNCIgd2lkdGg9IjI1NCIgaGVpZ2h0PSI4NiIgZmlsbD0iI0Y3RjVFRiIgc3Ryb2tlPSIjMTYxNDBGIiBzdHJva2Utd2lkdGg9IjQiLz4KPHRleHQgeD0iNTk3IiB5PSIxNDMiIGZvbnQtZmFtaWx5PSJtb25vc3BhY2UiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiMxNjE0MEYiPkxJVkUgQlVTICAwN0E8L3RleHQ+Cjx0ZXh0IHg9IjU5NyIgeT0iMTc2IiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMEU3QzdCIj40IG1pbjwvdGV4dD4KPHRleHQgeD0iNTk3IiB5PSIyNDUiIGZvbnQtZmFtaWx5PSJtb25vc3BhY2UiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiMxNjE0MEYiPk5FWFQgU1RPUDwvdGV4dD4KPHRleHQgeD0iNTk3IiB5PSIyNzgiIGZvbnQtZmFtaWx5PSJtb25vc3BhY2UiIGZvbnQtc2l6ZT0iMjQiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiMxNjE0MEYiPkNJVFkgQ0VOVFJFPC90ZXh0Pgo8cmVjdCB4PSI1NzUiIHk9IjMyMiIgd2lkdGg9IjI1NCIgaGVpZ2h0PSI0MCIgZmlsbD0iI0ZGNUExRiIgc3Ryb2tlPSIjMTYxNDBGIiBzdHJva2Utd2lkdGg9IjQiLz4KPHRleHQgeD0iNjQwIiB5PSIzNDkiIGZvbnQtZmFtaWx5PSJtb25vc3BhY2UiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiMxNjE0MEYiPlRSQUNLIExJVkU8L3RleHQ+Cjwvc3ZnPg==" alt="Sample interface for the Local Bus Tracking App"></div>
             <p class="project-desc">A real-time bus tracking web app with GPS navigation, interactive route maps, arrival estimates and instant alerts, built to make everyday commuting easier to plan around.</p>
             <div class="stack-row">
               <span class="stack-tag">Node.js</span>
@@ -636,6 +650,7 @@
           <div class="project-date">OCT<br>2025</div>
           <div>
             <div class="project-title">Gamified Cybersecurity Knowledge Platform</div>
+            <div class="project-preview"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNDIwIj4KPHJlY3Qgd2lkdGg9IjkwMCIgaGVpZ2h0PSI0MjAiIGZpbGw9IiNGN0Y1RUYiLz4KPHJlY3QgeD0iMjIiIHk9IjIyIiB3aWR0aD0iODU2IiBoZWlnaHQ9IjM3NiIgZmlsbD0iI0UzRThERCIgc3Ryb2tlPSIjMTYxNDBGIiBzdHJva2Utd2lkdGg9IjYiLz4KPHJlY3QgeD0iNDYiIHk9IjQ2IiB3aWR0aD0iODA4IiBoZWlnaHQ9IjUyIiBmaWxsPSIjMTYxNDBGIi8+Cjx0ZXh0IHg9IjcwIiB5PSI4MCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIyMCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iI0Y3RjVFRiI+Q1lCRVIgUVVFU1QgLyBMRVZFTCAwMzwvdGV4dD4KPHJlY3QgeD0iNDYiIHk9IjEyMCIgd2lkdGg9IjUyMCIgaGVpZ2h0PSIyNDIiIGZpbGw9IiNGN0Y1RUYiIHN0cm9rZT0iIzE2MTQwRiIgc3Ryb2tlLXdpZHRoPSI0Ii8+Cjx0ZXh0IHg9IjcyIiB5PSIxNTgiIGZvbnQtZmFtaWx5PSJtb25vc3BhY2UiIGZvbnQtc2l6ZT0iMTciIGZpbGw9IiM0QjRBNDIiPk1JU1NJT048L3RleHQ+Cjx0ZXh0IHg9IjcyIiB5PSIxOTIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI3IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMTYxNDBGIj5JZGVudGlmeSB0aGUgcGhpc2hpbmcgc2lnbmFsPC90ZXh0Pgo8cmVjdCB4PSI3MiIgeT0iMjE4IiB3aWR0aD0iNDU2IiBoZWlnaHQ9IjM0IiBmaWxsPSIjRTNFOEREIiBzdHJva2U9IiMxNjE0MEYiIHN0cm9rZS13aWR0aD0iMyIvPgo8dGV4dCB4PSI4OCIgeT0iMjQxIiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjE1IiBmaWxsPSIjMTYxNDBGIj5BLiBWZXJpZmllZCBzZW5kZXIgKyBrbm93biBkb21haW48L3RleHQ+CjxyZWN0IHg9IjcyIiB5PSIyNjQiIHdpZHRoPSI0NTYiIGhlaWdodD0iMzQiIGZpbGw9IiNGRkM1M0QiIHN0cm9rZT0iIzE2MTQwRiIgc3Ryb2tlLXdpZHRoPSIzIi8+Cjx0ZXh0IHg9Ijg4IiB5PSIyODciIGZvbnQtZmFtaWx5PSJtb25vc3BhY2UiIGZvbnQtc2l6ZT0iMTUiIGZpbGw9IiMxNjE0MEYiPkIuIFVyZ2VudCBsaW5rIGFza2luZyBmb3IgcGFzc3dvcmQ8L3RleHQ+CjxyZWN0IHg9IjcyIiB5PSIzMTAiIHdpZHRoPSIyMTAiIGhlaWdodD0iMzQiIGZpbGw9IiMwRTdDN0IiLz4KPHRleHQgeD0iMTMyIiB5PSIzMzMiIGZvbnQtZmFtaWx5PSJtb25vc3BhY2UiIGZvbnQtc2l6ZT0iMTUiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNGN0Y1RUYiPlNVQk1JVCBBTlNXRVI8L3RleHQ+CjxyZWN0IHg9IjU5NiIgeT0iMTIwIiB3aWR0aD0iMjMzIiBoZWlnaHQ9IjExMCIgZmlsbD0iI0ZGNUExRiIgc3Ryb2tlPSIjMTYxNDBGIiBzdHJva2Utd2lkdGg9IjQiLz4KPHRleHQgeD0iNjIwIiB5PSIxNTEiIGZvbnQtZmFtaWx5PSJtb25vc3BhY2UiIGZvbnQtc2l6ZT0iMTUiIGZpbGw9IiMxNjE0MEYiPlNDT1JFPC90ZXh0Pgo8dGV4dCB4PSI2MjAiIHk9IjE5NyIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIzOCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzE2MTQwRiI+ODIwIFhQPC90ZXh0Pgo8cmVjdCB4PSI1OTYiIHk9IjI0OCIgd2lkdGg9IjIzMyIgaGVpZ2h0PSIxMTQiIGZpbGw9IiNGN0Y1RUYiIHN0cm9rZT0iIzE2MTQwRiIgc3Ryb2tlLXdpZHRoPSI0Ii8+Cjx0ZXh0IHg9IjYyMCIgeT0iMjc5IiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjE1IiBmaWxsPSIjNEI0QTQyIj5TVFJFQUs8L3RleHQ+Cjx0ZXh0IHg9IjYyMCIgeT0iMzE5IiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjMwIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMEU3QzdCIj4wNyBDT1JSRUNUPC90ZXh0Pgo8L3N2Zz4=" alt="Sample interface for the Gamified Cybersecurity Knowledge Platform"></div>
             <p class="project-desc">Built during a 24-hour coding hackathon: an interactive, game-based web platform that teaches cybersecurity fundamentals through challenges rather than lectures — a team effort in web development, time management and rapid problem-solving.</p>
             <div class="stack-row">
               <span class="stack-tag">HTML</span>
@@ -659,6 +674,7 @@
           <div class="project-date">APR<br>2026</div>
           <div>
             <div class="project-title">IoT-Based Smart Anti-Theft Box System</div>
+            <div class="project-preview"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNDIwIj4KPHJlY3Qgd2lkdGg9IjkwMCIgaGVpZ2h0PSI0MjAiIGZpbGw9IiNGN0Y1RUYiLz4KPHJlY3QgeD0iMjIiIHk9IjIyIiB3aWR0aD0iODU2IiBoZWlnaHQ9IjM3NiIgZmlsbD0iI0UzRThERCIgc3Ryb2tlPSIjMTYxNDBGIiBzdHJva2Utd2lkdGg9IjYiLz4KPHJlY3QgeD0iNDYiIHk9IjQ2IiB3aWR0aD0iMzkwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iI0Y3RjVFRiIgc3Ryb2tlPSIjMTYxNDBGIiBzdHJva2Utd2lkdGg9IjQiLz4KPHJlY3QgeD0iMTEwIiB5PSIxMDUiIHdpZHRoPSIyNjAiIGhlaWdodD0iMTcwIiBmaWxsPSIjMEU3QzdCIiBzdHJva2U9IiMxNjE0MEYiIHN0cm9rZS13aWR0aD0iNiIvPgo8cmVjdCB4PSIxNDAiIHk9IjEzNSIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIxMTAiIGZpbGw9IiNFM0U4REQiIHN0cm9rZT0iIzE2MTQwRiIgc3Ryb2tlLXdpZHRoPSI0Ii8+CjxjaXJjbGUgY3g9IjI0MCIgY3k9IjE5MCIgcj0iMzEiIGZpbGw9IiNGRkM1M0QiIHN0cm9rZT0iIzE2MTQwRiIgc3Ryb2tlLXdpZHRoPSI1Ii8+CjxwYXRoIGQ9Ik0yMjQgMTkyIEwyMzYgMjA0IEwyNTggMTc2IiBmaWxsPSJub25lIiBzdHJva2U9IiMxNjE0MEYiIHN0cm9rZS13aWR0aD0iNyIvPgo8dGV4dCB4PSIxMDMiIHk9IjMwOCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxOSIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzE2MTQwRiI+U01BUlQgQU5USS1USEVGVCBCT1g8L3RleHQ+CjxyZWN0IHg9IjQ3NCIgeT0iNDYiIHdpZHRoPSIzNTUiIGhlaWdodD0iODYiIGZpbGw9IiNGRjVBMUYiIHN0cm9rZT0iIzE2MTQwRiIgc3Ryb2tlLXdpZHRoPSI0Ii8+Cjx0ZXh0IHg9IjUwMCIgeT0iNzciIGZvbnQtZmFtaWx5PSJtb25vc3BhY2UiIGZvbnQtc2l6ZT0iMTUiIGZpbGw9IiMxNjE0MEYiPlNUQVRVUzwvdGV4dD4KPHRleHQgeD0iNTAwIiB5PSIxMTIiIGZvbnQtZmFtaWx5PSJtb25vc3BhY2UiIGZvbnQtc2l6ZT0iMjQiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiMxNjE0MEYiPkFMRVJUIFNZU1RFTSBBUk1FRDwvdGV4dD4KPHJlY3QgeD0iNDc0IiB5PSIxNTIiIHdpZHRoPSIxNzAiIGhlaWdodD0iMTk0IiBmaWxsPSIjRjdGNUVGIiBzdHJva2U9IiMxNjE0MEYiIHN0cm9rZS13aWR0aD0iNCIvPgo8dGV4dCB4PSI0OTYiIHk9IjE4MyIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzRCNEE0MiI+U0VOU09SPC90ZXh0Pgo8dGV4dCB4PSI0OTYiIHk9IjIxNyIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIyMiIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzBFN0M3QiI+VklCUkFUSU9OPC90ZXh0Pgo8dGV4dCB4PSI0OTYiIHk9IjI1MCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzRCNEE0MiI+TE9DQVRJT048L3RleHQ+Cjx0ZXh0IHg9IjQ5NiIgeT0iMjgyIiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjIwIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMTYxNDBGIj5MSVZFIEdQUzwvdGV4dD4KPHJlY3QgeD0iNjY2IiB5PSIxNTIiIHdpZHRoPSIxNjMiIGhlaWdodD0iMTk0IiBmaWxsPSIjRjdGNUVGIiBzdHJva2U9IiMxNjE0MEYiIHN0cm9rZS13aWR0aD0iNCIvPgo8dGV4dCB4PSI2ODYiIHk9IjE4MyIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzRCNEE0MiI+QUxFUlQ8L3RleHQ+Cjx0ZXh0IHg9IjY4NiIgeT0iMjE5IiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjRkY1QTFGIj5TTVMgU0VOVDwvdGV4dD4KPHRleHQgeD0iNjg2IiB5PSIyNTIiIGZvbnQtZmFtaWx5PSJtb25vc3BhY2UiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IiM0QjRBNDIiPk1BUCBMSU5LPC90ZXh0Pgo8dGV4dCB4PSI2ODYiIHk9IjI4MyIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIyMCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzE2MTQwRiI+T1BFTjwvdGV4dD4KPC9zdmc+" alt="Sample dashboard for the IoT-Based Smart Anti-Theft Box System"></div>
             <p class="project-desc">A smart security system that detects vibration and unauthorised opening, determines the device's location, and sends real-time alerts with that location to the owner.</p>
             <div class="stack-row">
               <span class="stack-tag">IoT</span>
@@ -681,11 +697,40 @@
     </div>
   </section>
 
+
+  <section id="achievements">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="section-index">04 / ACHIEVEMENTS</span>
+          <h2 class="section-title" style="margin-top:10px;">Achievements</h2>
+        </div>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-badge">
+          <div class="cert-org">NeoColab</div>
+          <div class="cert-name">Completed 120 Hours</div>
+          <span class="cert-date">Achievement</span>
+        </div>
+        <div class="cert-badge">
+          <div class="cert-org">LeetCode</div>
+          <div class="cert-name">Solved 20 Questions</div>
+          <span class="cert-date">Problem Solving</span>
+        </div>
+        <div class="cert-badge">
+          <div class="cert-org">InfoVerse Hackathon</div>
+          <div class="cert-name">Semi-Finalist</div>
+          <span class="cert-date">Hackathon</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="certificates">
     <div class="wrap">
       <div class="section-head">
         <div>
-          <span class="section-index">04 / CERTIFICATES</span>
+          <span class="section-index">05 / CERTIFICATES</span>
           <h2 class="section-title" style="margin-top:10px;">Certifications</h2>
         </div>
       </div>
@@ -722,7 +767,7 @@
     <div class="wrap">
       <div class="section-head">
         <div>
-          <span class="section-index">05 / EDUCATION</span>
+          <span class="section-index">06 / EDUCATION</span>
           <h2 class="section-title" style="margin-top:10px;">Education</h2>
         </div>
       </div>
